@@ -1,18 +1,20 @@
-#include "stdio.h"
-
+#include "main.h"
 /**
-  * print_alphabet - Make the alphabet
-  *
-  * Return: void
-  */
-void print_putchar(void)
+ * main - Entry point
+ * Description: prints 'Holberton \n'
+ * Return: Always 0 (success)
+ */
+int main(void)
 {
-	char c;
+char str[] = "_putchar\n";
+int i = 0;
 
-	for (c = 'a'; c <= 'z'; c++)
+while (str[i] != '\0')
 	{
-		_putchar(c);
-	}
+	char c = str[i];
 
-	_putchar('\n');
+	_putchar(c);
+	i++;
+	}
+return (0);
 }
