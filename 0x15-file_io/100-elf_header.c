@@ -1,20 +1,3 @@
-
-Superstazdare
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x15-file_io/100-elf_header.c
-@Superstazdare
-Superstazdare files
- 1 contributor
-314 lines (286 sloc)  6.69 KB
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
