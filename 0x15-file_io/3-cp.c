@@ -1,20 +1,3 @@
-Skip to content
-Superstazdare
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x15-file_io/3-cp.c
-@Superstazdare
-Superstazdare files
- 1 contributor
-103 lines (86 sloc)  2 KB
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
