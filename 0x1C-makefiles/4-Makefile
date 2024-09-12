@@ -1,28 +1,28 @@
 # Variables
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
-SRC = $(wildcard *.c)
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
 
-# Default rule
+# Build the executable
 all: $(NAME)
 
-# Rule to build the executable
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-# Rule to clean Emacs and Vim temporary files along with the executable
+# Clean temporary files
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) *~ $(OBJ)
 
-# Rule to clean object files
+# Clean object files
 oclean:
 	$(RM) $(OBJ)
 
-# Rule to clean everything
-fclean: clean oclean
+# Clean all temporary files and executable
+fclean: clean
+	$(RM) $(NAME)
 
-# Rule to force recompilation
+# Rebuild everything
 re: fclean all
