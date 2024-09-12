@@ -1,0 +1,7 @@
+# Define variables
+CC = gcc
+SRC = main.c school.c
+
+# Rule for building the executable
+all:
+	$(CC) $(SRC) -o school
