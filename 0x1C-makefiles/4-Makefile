@@ -6,23 +6,24 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
 
-# Build the executable
+# Default rule to build the executable
 all: $(NAME)
 
+# Rule to build the executable
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-# Clean temporary files
+# Rule to clean up temporary files and object files
 clean:
 	$(RM) *~ $(OBJ)
 
-# Clean object files
+# Rule to clean up only object files
 oclean:
 	$(RM) $(OBJ)
 
-# Clean all temporary files and executable
+# Rule to clean up everything
 fclean: clean
 	$(RM) $(NAME)
 
-# Rebuild everything
+# Rule to force recompilation
 re: fclean all
