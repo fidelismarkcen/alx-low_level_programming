@@ -1,4 +1,4 @@
-#ifndef LISTS_H
+#ifndef LISTS_H  /* Add the correct header guard here */
 #define LISTS_H
 
 #include <stdlib.h>
@@ -21,6 +21,6 @@ typedef struct dlistint_s
 
 /* Function prototypes */
 size_t print_dlistint(const dlistint_t *h);
-size_t dlistint_len(const dlistint_t *h); /* Add this prototype */
+size_t dlistint_len(const dlistint_t *h);  /* Ensure this prototype is here */
 
 #endif /* LISTS_H */
